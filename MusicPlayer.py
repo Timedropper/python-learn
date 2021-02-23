@@ -1,3 +1,4 @@
+#!/data/data/com.termux/files/usr/bin/python
 from time import sleep
 from random import shuffle
 from os import listdir,popen
@@ -16,7 +17,7 @@ def get_status():
     return info
 
 def play(path):
-    popen(f"termux-media-player play '/sdcard/Music/rewind/netease/{path}'")
+    popen(f'termux-media-player play "/sdcard/Music/rewind/netease/{path}"')
 
 try:
     for i in Music:
